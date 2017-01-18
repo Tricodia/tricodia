@@ -63,9 +63,28 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '260766554336246',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 
     <body id="top" class="has-header-search">
+    
 
         <!--header start-->
         <header id="header" class="tt-nav transparent-header">
@@ -85,6 +104,7 @@ s0.parentNode.insertBefore(s1,s0);
 
                         <!-- menu start-->
                         <ul class="menuzord-menu pull-right light">
+
                             <li class="active "><a href="#top" class="page-scroll" >Home</a></li>
                             <li><a href="#about" class="page-scroll" >About Us</a>
                                 <!--<ul class="dropdown">
@@ -145,6 +165,7 @@ s0.parentNode.insertBefore(s1,s0);
             <div class="container">
 
               <div class="text-center mb-80">
+
                   <h2 class="section-title text-uppercase">What We Do</h2>
                   <p class="section-sub"><i>You Need Unique Products?? We Make them.</i></p>
               </div>
@@ -263,14 +284,21 @@ s0.parentNode.insertBefore(s1,s0);
                             </div>
                           </div><!-- /.featured-item -->
                       </div><!-- /.col-sm-6 -->
+                      <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
                       <div class="col-sm-6">
                           <div class="featured-item feature-icon">
                             <div class="icon">
                                 <i class="material-icons white-text">&#xE323;</i>
                             </div>
+
                             <div class="desc">
                                 <h2 class="white-text">Project Delivering</h2>
-                                <p class="white-text">Punctuality is the most important quality that we follow in our team. Good services within less time..That is the moto of our team.</p>
+                                <p class="white-text">Punctuality  is the most important quality that we follow in our team. Good services within less time..That is the moto of our team.</p>
                             </div>
                           </div><!-- /.featured-item -->
                       </div><!-- /.col-sm-6 -->
