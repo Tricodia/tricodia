@@ -1,3 +1,2 @@
-# ricodia
---------------
+# Tricodia
 Website for tricodia
